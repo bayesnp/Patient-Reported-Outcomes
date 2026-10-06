@@ -1,0 +1,232 @@
+
+R version 4.6.1 (2026-06-24) -- "Happy Hop"
+Copyright (C) 2026 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+####
+# 2026-10-06
+# Excerpts of R output showing the confusion matrix 
+# of each symptom and performance matrix.
+####
+[1] "HOARSE.VOICE"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          19    7        2      1           1
+  Mild           5   11        1      0           1
+  Moderate       1    0        5      0           0
+  Severe         0    0        0      1           0
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.407409 
+ARI 0.207202 
+weighted kappa:  0.4260525 
+macro scores: 
+precision    recall        f1 
+0.4992222 0.6155556 0.5365945 
+micro scores: 
+precision    recall        f1 
+0.6545455 0.6545455 0.6545455 
+[1] "NAUSEA"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          35    1        1      0           0
+  Mild           7    5        2      1           0
+  Moderate       3    0        0      0           0
+  Severe         0    0        0      0           0
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.4035282 
+ARI 0.2861405 
+weighted kappa:  0.3107769 
+macro scores: 
+precision    recall        f1 
+0.3222222 0.2558559 0.2659698 
+micro scores: 
+precision    recall        f1 
+0.7272727 0.7272727 0.7272727 
+[1] "VOMITING"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          53    1        0      0           0
+  Mild           0    1        0      0           0
+  Moderate       0    0        0      0           0
+  Severe         1    0        0      0           0
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.4700511 
+ARI 0.4695399 
+weighted kappa:  0.3170732 
+macro scores: 
+precision    recall        f1 
+0.2962963 0.3962963 0.3296296 
+micro scores: 
+precision    recall        f1 
+0.9642857 0.9642857 0.9642857 
+[1] "CONSTIPATION"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          42    0        0      0           0
+  Mild           6    2        0      0           0
+  Moderate       0    0        1      0           0
+  Severe         1    0        0      0           0
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.5133782 
+ARI 0.3603809 
+weighted kappa:  0.4292683 
+macro scores: 
+precision    recall        f1 
+0.5714286 0.4500000 0.4646154 
+micro scores: 
+precision    recall        f1 
+0.8653846 0.8653846 0.8653846 
+[1] "SHORTNESS.OF.BREATH"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          45    0        0      0           0
+  Mild           4    2        1      0           0
+  Moderate       1    0        2      0           0
+  Severe         0    0        0      0           0
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.6738844 
+ARI 0.5625284 
+weighted kappa:  0.6287367 
+macro scores: 
+precision    recall        f1 
+0.5133333 0.3904762 0.4116959 
+micro scores: 
+precision    recall        f1 
+0.8909091 0.8909091 0.8909091 
+[1] "ARM.OR.LEG.SWELLING"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          47    3        1      0           0
+  Mild           0    2        0      0           0
+  Moderate       1    0        0      0           0
+  Severe         0    0        0      0           0
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.4035513 
+ARI 0.365454 
+weighted kappa:  0.3201439 
+macro scores: 
+precision    recall        f1 
+0.2758333 0.3843137 0.3041847 
+micro scores: 
+precision    recall        f1 
+0.9074074 0.9074074 0.9074074 
+[1] "NUMBNESS"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          45    2        1      0           0
+  Mild           1    5        0      0           0
+  Moderate       1    0        0      0           1
+  Severe         0    0        0      0           0
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.6314967 
+ARI 0.5991739 
+weighted kappa:  0.556338 
+macro scores: 
+precision    recall        f1 
+0.3343465 0.3541667 0.3433198 
+micro scores: 
+precision    recall        f1 
+0.8928571 0.8928571 0.8928571 
+[1] "DIZZINESS"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          29    4        0      0           0
+  Mild           2   11        3      0           0
+  Moderate       0    0        4      0           1
+  Severe         0    0        1      0           1
+  Very severe    0    0        0      0           0
+Kendall's tau:  0.8138333 
+ARI 0.5921376 
+weighted kappa:  0.7281553 
+macro scores: 
+precision    recall        f1 
+0.4337634 0.4732576 0.4462624 
+micro scores: 
+precision    recall        f1 
+0.7857143 0.7857143 0.7857143 
+[1] "PROBLEMS.WITH.CONCENTRATION"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          28    5        0      0           1
+  Mild           6    7        3      0           0
+  Moderate       1    1        1      0           0
+  Severe         1    0        0      0           0
+  Very severe    0    0        2      0           0
+Kendall's tau:  0.4618418 
+ARI 0.2782537 
+weighted kappa:  0.3722978 
+macro scores: 
+precision    recall        f1 
+0.2965812 0.3188725 0.3009962 
+micro scores: 
+precision    recall        f1 
+0.6428571 0.6428571 0.6428571 
+[1] "PAIN"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None           8    3        3      0           1
+  Mild           2    8        4      0           0
+  Moderate       0    2        8      5           0
+  Severe         0    0        1      5           1
+  Very severe    0    0        1      1           0
+Kendall's tau:  0.613791 
+ARI 0.1801431 
+weighted kappa:  0.5414457 
+macro scores: 
+precision    recall        f1 
+0.4681037 0.4704762 0.4576296 
+micro scores: 
+precision    recall        f1 
+0.5471698 0.5471698 0.5471698 
+[1] "FATIGUE"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None           8    6        0      1           0
+  Mild           2    9        4      0           0
+  Moderate       0    2       10      2           3
+  Severe         1    0        0      2           2
+  Very severe    0    2        1      1           0
+Kendall's tau:  0.5546165 
+ARI 0.2009208 
+weighted kappa:  0.4636542 
+macro scores: 
+precision    recall        f1 
+0.4401914 0.4243137 0.4266865 
+micro scores: 
+precision    recall        f1 
+0.5178571 0.5178571 0.5178571 
+[1] "ANXIETY"
+             cipro
+pctae         None Mild Moderate Severe Very severe
+  None          25    1        0      0           0
+  Mild           5    6        3      1           0
+  Moderate       0    1        6      0           0
+  Severe         4    1        0      1           0
+  Very severe    0    0        1      0           1
+Kendall's tau:  0.5922159 
+ARI 0.4277974 
+weighted kappa:  0.5522559 
+macro scores: 
+precision    recall        f1 
+0.7003922 0.5770696 0.5911765 
+micro scores: 
+precision    recall        f1 
+0.6964286 0.6964286 0.6964286 
+
+# ---- end of R output ----
